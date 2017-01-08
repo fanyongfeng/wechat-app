@@ -49,3 +49,22 @@
 .text-green {
   color: #00c9a9;
 }
+
+.inline-block {
+  display: inline-block;
+}
+
+.btn-sku {
+  padding: 4.5px 17px; 
+  border-radius: 1.5px;
+  background-color: #ffffff;
+  border: solid 0.5px #979797;
+  margin-left: 7px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.btn-sku.active {
+  border-color: #00c9a9;
+  color: #00c9a9;
+}

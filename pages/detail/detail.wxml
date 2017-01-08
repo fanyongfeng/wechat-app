@@ -20,6 +20,9 @@
     </view>
     <view class="flower_sku_wrap">
       <text class="sku_name font-p">订购日期</text>
+      <view class="sku_list_wrap">
+        <view class="btn-sku active inline-block">仅此一次</view>
+      </view>
     </view>
   </view>
 </view>
