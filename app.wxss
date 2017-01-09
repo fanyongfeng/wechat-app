@@ -3,11 +3,12 @@ page {
   height: 100%;
   font-family: PingFangSC;
   font-size: 12px;
-  font-weight: 100；
+  font-weight: 100;
   font-weight: normal;
   font-stretch: normal;
   text-align: left;
   color: #4a4a4a;
+  background: #fff;
 }
 .container {
   height: 100%;
@@ -22,6 +23,16 @@ page {
   color: #fff;
   text-align: center;
   background-color: #00c9a9;
+}
+
+.btn-sku {
+  padding: 4.5px 17px; 
+  border-radius: 1.5px;
+  background-color: #ffffff;
+  border: solid 1px #979797;
+  margin-right: 7px;
+  font-size: 13px;
+  line-height: 18px;
 }
 .font-light {
   font-weight: 100;

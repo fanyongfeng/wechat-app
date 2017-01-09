@@ -4,7 +4,7 @@
       <view class="header_banner_tip content1">
         「Colourful多彩系列」
       </view>
-      <image src="../../images/flower.png"></image>
+      <image src="http://dev.wemart.cn/console/images/card/flower.png"></image>
     </view>
     <view class="header_goods_mes text-center">
       <!-- <view class="pull-left col-50 text-right p-r-10 content1 flower_name">混合鲜花</view>
@@ -21,8 +21,59 @@
     <view class="flower_sku_wrap">
       <text class="sku_name font-p">订购日期</text>
       <view class="sku_list_wrap">
-        <view class="btn-sku active inline-block">仅此一次</view>
+        <view class="btn-sku {{ item.selected ? 'active' : '' }} inline-block m-top-10" wx:for="{{ skuList }}"  wx:key="unique" wx:for-index="id" wx:for-item="item" data-skuid="{{ item.skuId }}" bindtap="selectsku">{{ item.name }}<span class="tip">{{ item.tip }}</span></view>
       </view>
     </view>
+    <view class="flower_detail_wrap">
+      <view class="flower_detail_key">
+        <view class="content content1">珍宠自己 值得拥有</view>
+        <view class="content content2 m-top-10">温暖的时光</view>
+      </view>
+    </view>
+    <view class="font-p m-top-10 m-b-12 text-center content2">话语</view>
+    <view class="flower_detail_text">在阳光温暖的街道上，在不知不觉的一瞬间，</view>
+    <view class="flower_detail_text">又想起你</view>
+    <view class="flower_detail_text m-b-17">你像鲜花那样的绽放，让我心动。</view>
+    <image class="image_detail" src="http://dev.wemart.cn/console/images/card/detail1.png"></image>
+    <view class="font-p m-top-10 m-b-12 text-center content2">精选花材</view>
+    <view class="flower_detail_text">空运昆明最新鲜A级花材</view>
+    <view class="flower_detail_text m-b-17">主花、配花、花叶一应俱全</view>
+    <image class="image_detail" src="http://dev.wemart.cn/console/images/card/detail2.png"></image>
+    <view class="font-p m-top-10 m-b-12 text-center content2">设计师物语</view>
+    <view class="design_author_tip_wrap">
+      <view class="design_author_photo_wrap">
+        <image src="http://dev.wemart.cn/console/images/card/design.png"></image>
+      </view>  
+      <view class="design_author_detail m-b-17" style="flex-grow: 1;margin-left: 13px;">
+        <text class="design_name">Bathea</text>
+        <view class="design_detail font-p content2">毕业于HKAFA香港插花艺术许愿，屡获香港插画比赛大奖，中国第七届花卉博览会赛事冠军</view>
+      </view>
+    </view>
+    <view class="flower_detail_text">香槟玫瑰花色比较特别，柔和优雅。29朵香槟玫瑰</view>
+    <view class="flower_detail_text m-b-17">搭寓意美好的香水百合，代表最美好最长久的祝愿</view>
+    <image class="image_detail" src="http://dev.wemart.cn/console/images/card/detail3.png"></image>
+    <view class="font-p m-top-10 m-b-12 text-center content2">简约包装</view>
+    <!-- <view class="text-center flower_advantage_icon_tip">
+      <view class="flower_advantage_icon_tip_item text-right col-50">
+        <view class="text-center">
+          <image src="http://dev.wemart.cn/console/images/card/icon1.png"></image>
+          <text class="icon_tip content2">可降解环保材料</text>
+        </view>
+      </view>
+      <span></span>
+      <view class="flower_advantage_icon_tip_item text-left col-50">
+        <image src="http://dev.wemart.cn/console/images/card/icon2.png"></image>
+        <text class="icon_tip content2">开盒包装无需工具</text>
+      </view>
+    </view> -->
+    <view class="text-center flower_advantage_icon_tip_item m-b-6"><image src="http://dev.wemart.cn/console/images/card/icon1.png"></image><span></span><image src="http://dev.wemart.cn/console/images/card/icon2.png"></image></view>
+    <view class="text-center flower_advantage_icon_tip_item m-b-12">可降解环保材料<e></e>开盒包装无需工具</view>
+    <image class="image_detail" src="http://dev.wemart.cn/console/images/card/detail4.png"></image>
+    <view class="font-p m-top-10 m-b-12 text-center content2">心意卡片</view>
+    <view class="flower_detail_text">免费赠送精致卡片</view>
+    <view class="flower_detail_text m-b-17">下单时填写留言即可送出专属祝福</view>
+    <image class="image_detail" src="http://dev.wemart.cn/console/images/card/detail5.png"></image>
+    <!-- <view class="font-p m-top-10 m-b-12 text-center content2">商品详情</view> -->
+    <view class="flower_btn_buy btn-cta" wx:if="{{ showBuy }}" bindtap="buyNow">立即订购</view>  
   </view>
 </view>

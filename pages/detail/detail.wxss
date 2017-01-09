@@ -18,7 +18,7 @@
   right: 13px;
   font-size: 10px;
   text-align: center;
-  line-height: 33.5px;
+  line-height: 34px;
 }
 .flower_name {
   font-size: 17px;
@@ -62,4 +62,119 @@
 .flower_sku_wrap {
   padding-left: 16px;
   padding-top: 16px;
+}
+
+
+.flower_detail_wrap {
+  margin-top: 26px;
+}
+.flower_detail_wrap .flower_detail_key {
+  width: 210px;
+  height: 65px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.flower_detail_wrap .flower_detail_key::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 53px;
+  top: 0;
+  left: -33px;
+  border: 1px solid #00c9a9;
+  border-right: none; 
+}
+
+.flower_detail_wrap .flower_detail_key::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 53px;
+  top: 0;
+  right: -33px;
+  border: 1px solid #00c9a9;
+  border-left: none; 
+}
+
+.flower_detail_wrap .flower_detail_key .content {
+  font-size: 17px;
+  line-height: 24px;
+}
+.image_detail {
+  width: 100%;
+}
+.flower_detail_text {
+  text-align: center;
+  font-size: 13px;
+  line-height: 21px;
+}
+.design_author_tip_wrap {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.design_author_tip_wrap .design_author_photo_wrap {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  /*border: solid 1px #e9e9e9;*/
+}
+
+.design_author_tip_wrap .design_author_photo_wrap image{
+  width: 32px;
+  height: 32px;
+  margin: 2px;
+}
+.design_name {
+  float: left;
+  display: inline-block;
+  font-family: BrushScriptMT;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #00c9a9;
+}
+.design_detail {
+  display: inline-block;
+  float: left;
+  font-size: 10px;
+  line-height: 18px;
+}
+
+.flower_advantage_icon_tip_item {
+  font-size: 8px;
+  line-height: 11px;
+  color: #9b9b9b;
+}
+
+.flower_advantage_icon_tip_item span {
+  display: inline-block;
+  width: 0px;
+  margin: 0 35px;
+  height: 22px;
+  border-left: 1px solid #9B9B9B;
+  position: relative;
+  top: 1px;
+}
+.flower_advantage_icon_tip_item e {
+  display: inline-block;
+  width: 0px;
+  margin: 0 14px;
+  
+}
+.flower_advantage_icon_tip_item image {
+  width: 32px;
+  height: 26px;
+}
+.flower_btn_buy {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

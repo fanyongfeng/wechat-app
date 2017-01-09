@@ -54,17 +54,32 @@
   display: inline-block;
 }
 
-.btn-sku {
-  padding: 4.5px 17px; 
-  border-radius: 1.5px;
-  background-color: #ffffff;
-  border: solid 0.5px #979797;
-  margin-left: 7px;
-  font-size: 13px;
-  line-height: 18px;
+.btn-sku .tip {
+  font-size: 9px;
+  color: #00c9a9;
 }
 
 .btn-sku.active {
   border-color: #00c9a9;
   color: #00c9a9;
+}
+
+.m-top-10 {
+  margin-top: 10px;
+}
+
+.m-b-6 {
+  margin-bottom: 6px;
+}
+
+.m-top-12 {
+  margin-top: 12px;
+}
+
+.m-b-12 {
+  margin-bottom: 12px;
+}
+
+.m-b-17 {
+  margin-bottom: 17px;
 }

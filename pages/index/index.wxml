@@ -3,7 +3,7 @@
   <view class="card_wrap">
     <view bindtouchend="slidethis" animation="{{id === 0 ? animationData : ''}}" class="card_item card{{ id + 1 }} " wx:for="{{ cardInfoList }}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
       <span class="change_icon" bindtap="slidethis" wx:if="{{ id === 0 }}">
-        <image src="../../images/changeicon.png"></image>
+        <image src="http://dev.wemart.cn/console/images/card/changeicon.png"></image>
       </span>
       <view class="card_info">
         <blockquote class="card_info_mes_title">{{ item.cardInfo.cardTitle }}</blockquote>
@@ -19,7 +19,7 @@
     </view>
     <!-- <view class="card_item card2">
       <span class="change_icon">
-        <image src="../../images/changeicon.png"></image>
+        <image src="http://dev.wemart.cn/console/images/card/changeicon.png"></image>
       </span>
       <view class="card_info">
         <blockquote class="card_info_mes_title">你不知道的花事</blockquote>
@@ -33,7 +33,7 @@
     </view>
     <view class="card_item card3">
       <span class="change_icon">
-        <image src="../../images/changeicon.png"></image>
+        <image src="http://dev.wemart.cn/console/images/card/changeicon.png"></image>
       </span>
       <view class="card_info">
         <blockquote class="card_info_mes_title">你不知道的花事</blockquote>
