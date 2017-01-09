@@ -4,4 +4,10 @@ var app = getApp();
 Page({
   data: {
   },
+//event
+  address: function() {
+  wx.navigateTo({
+    url: '../address/address'
+  })
+ }
 });
