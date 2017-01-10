@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/detail/detail",
-    "pages/address/address"
+    "pages/address/address",
+    "pages/confirm/confirm"
   ],
   "window":{
     "backgroundTextStyle":"white",
