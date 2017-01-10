@@ -64,6 +64,14 @@
   color: #00c9a9;
 }
 
+.m-top-3 {
+  margin-top: 3px;
+}
+
+.m-top-7 {
+  margin-top: 7px;
+}
+
 .m-top-10 {
   margin-top: 10px;
 }

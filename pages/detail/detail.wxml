@@ -74,6 +74,6 @@
     <view class="flower_detail_text m-b-17">下单时填写留言即可送出专属祝福</view>
     <image class="image_detail" src="http://dev.wemart.cn/console/images/card/detail5.png"></image>
     <!-- <view class="font-p m-top-10 m-b-12 text-center content2">商品详情</view> -->
-    <view class="flower_btn_buy btn-cta" wx:if="{{ showBuy }}" bindtap="buyNow">立即订购</view>  
+    <view class="flower_btn_buy btn-cta" wx:if="{{ showBuy }}" bindtap="address">立即订购</view>  
   </view>
 </view>

@@ -1,0 +1,92 @@
+/**index.wxss**/
+/**optional**/
+@import "../../common.wxss";
+.block-bg {
+  padding: 14px 10px;
+}
+.buy_flower_detail {
+  display: flex;
+  position: relative;
+}
+.buy_flower_detair_photo_wrap {
+  width: 54px;
+  height: 60px;
+  box-shadow: -5px 1px 15px 1px #ccc;
+}
+
+.block_title {
+  font-size: 14px;
+  line-height: 20px;
+}
+.block_title_tip {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.flower_price {
+  position: absolute;
+  right: 11px;
+  top: 33px;
+  color: #00c9a9;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.buy_flower_detair_photo_wrap image {
+  width: 100%;
+  height: 100%;
+}
+.flower_detail {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.buy_flower_detail_tip {
+  flex-grow: 1;margin-left: 13px;
+}
+.block-bg{
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 15px #ccc; 
+}
+.btn-pay {
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background-color: #00c9a9;
+}
+.checkbox-style {
+    color:#00c9a9;
+}
+.box {
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #00c9a9;
+  margin-right:5px;
+  line-height: 20px;
+  display: inline-block;
+}
+.switch-style{
+    right:0
+}
+.data-select {
+  border-bottom: 1px solid #c0c2ce;
+  display: inline-block;
+}
+
+.data-select picker {
+   font-size: 12px;
+    line-height: 15px;
+    color: #c0c2ce;
+    display: inline-block;
+}
+
+.data-select-item {
+  width: 33.33%;
+  display: inline-block;
+}

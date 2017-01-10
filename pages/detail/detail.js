@@ -32,6 +32,7 @@ Page({
     }],
     showBuy: false
   },
+
   selectsku: function(e) {
     console.log(e);
     var skuId = e.target.dataset.skuid;
@@ -48,7 +49,11 @@ Page({
       showBuy: true
     });
   },
-  buyNow: function(e) {
-
-  }
+//event
+  address: function() {
+    wx.navigateTo({
+      url: '../address/address'
+    });
+ }
 });
+

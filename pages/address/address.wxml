@@ -1,0 +1,76 @@
+<!--address.xml-->
+<scroll-view class="page">
+
+    <!--购买花详情-->
+    <view class="block-bg buy_flower_detail">
+        <view class="buy_flower_detair_photo_wrap">
+            <image src="../../images/flower-buy.png"></image>
+        </view>  
+        <view class="buy_flower_detail_tip">
+            <view class="flower_detail content1 m-top-7">每月创意花卉</view>
+            <view class="flower_detail content2 m-top-3">三个月，自选日期</view>
+        </view>
+        <view class="flower_price">￥399</view>
+    </view>
+
+    <!--递送时间-->
+    <view class = "block-bg">
+        <view class = "text-left block_title">递送时间</view>
+        <view class = "text-left content2 block_title_tip ">
+            我们为您精心挑选了三个最合适的送花日期，您也可以对递送时间进行修改
+        </view>
+        <view style="display:flex; flex-direction:row" class="m-top-10">
+            <view class="data-select-item">
+                <view class="box">1</view>
+                <view class="data-select"><picker picker mode="date" bindchange="bindDateChange1">{{dates1}}</picker></view>
+            </view>
+            <view class="data-select-item">
+                <view class="box">2</view>
+                <view class="data-select"><picker picker mode="date" bindchange="bindDateChange1">{{dates2}}</picker></view>
+            </view>
+            <view class="data-select-item">
+                <view class="box">3</view>
+                <view class="data-select"><picker picker mode="date" bindchange="bindDateChange1">{{dates3}}</picker></view>
+            </view>
+        </view>
+    </view>
+
+    <!--配送地址-->
+    <view class = "block-bg">
+        <text class="sku_name font-p">配送地址</text>
+        <input placeholder="收货人" disabled="{{addDisabled}}"/>
+        <input placeholder="电话" type="number" disabled="{{addDisabled}}"/>
+        <view style="display:flex; flex-direction:row">
+            <input placeholder="省份" disabled="{{addDisabled}}"/>
+            <input placeholder="城市" disabled="{{addDisabled}}"/>
+            <input placeholder="区" disabled="{{addDisabled}}"/>
+        </view>
+        <input placeholder="街道" disabled="{{addDisabled}}"/>
+        <view class = "checkbox-style">
+            <checkbox value = "收件人填写地址"/>支付完成后由TA输入地址
+        </view>
+    </view>
+
+    <!--心里话-->
+    <view class = "block-bg">
+        <view style="display:flex; flex-direction:row">
+            <text class="sku_name font-p">随花附送心里话?</text>
+            <view class="switch-style">
+                <switch bindchange="switch1Change"/>
+            </view>
+        </view>
+        <view class="btn-area"><input disabled="{{greetingDisabled}}"/></view>
+    </view>
+
+    <!--匿名赠送-->
+    <view class = "block-bg">
+        <view style="display:flex; flex-direction:row">
+            <text class="sku_name font-p">匿名赠送</text>
+            <view class="switch-style">
+                <switch bindchange="switch2Change"/>
+            </view>
+        </view>
+    </view>
+    
+    <view class = "block-bg btn-pay" bindtap="btnPay">确认支付</view>
+</scroll-view>
