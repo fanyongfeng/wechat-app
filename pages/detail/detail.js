@@ -32,10 +32,20 @@ Page({
     }],
     showBuy: false
   },
-
+  /**
+   * [微信小程序分享]
+   * @return {[type]} [description]
+   */
+  onShareAppMessage: function () {
+    return {
+      title: '自定义分享标题',
+      desc: '自定义分享描述',
+      path: '/detail/detail'
+    };
+  },
   selectsku: function(e) {
     console.log(e);
-    var skuId = e.target.dataset.skuid;
+    var skuId = e.currentTarget.dataset.skuid;
     var goodInfo = this.data.skuList;
     for (var item in goodInfo) {
       if (goodInfo[item].skuId === skuId) {
@@ -49,7 +59,6 @@ Page({
       showBuy: true
     });
   },
-//event
   address: function() {
     wx.navigateTo({
       url: '../address/address'

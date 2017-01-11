@@ -1,0 +1,32 @@
+<!--confirm.xml-->
+<scroll-view class="page">
+    <!--购买花详情-->
+    <view class="block-bg buy_flower_detail">
+        <view class="buy_flower_detair_photo_wrap">
+            <image src="../../images/flower-buy.png"></image>
+        </view>  
+        <view class="buy_flower_detail_tip">
+            <view class="flower_detail content1 m-top-7">每月创意花卉</view>
+            <view class="flower_detail content2 m-top-3">三个月，自选日期</view>
+        </view>
+        <view class="flower_price">￥399</view>
+    </view>
+    <view class="block-bg">
+        <view class="confirm_addresss_title">
+            <view class="block_title">递送地址</view>
+            <view class="icon" bindtap="goback"><image src="../../images/compose.png"></image></view>
+        </view>
+        <view class="confirm_addresss_detail ">
+            <text>收货人姓名：{{ receive_name }}</text>
+            <text>地址：{{ address_detail }}</text>
+            <text>送花时间：{{ dates1 }}，{{ dates2 }}，{{ dates3 }}</text>
+        </view>
+    </view>
+    <view class="block-bg">
+        <view class="confirm_total_price">总计：<text class="flower_price">￥399</text></view>
+        <view class="confirm_total_tip content2 m-top-10">下个月一号，和我们一起期待第一束花束吧</view>
+        <view class="btn-pay btn-cta m-top-20" bindtap="payByself">自己支付</view>
+        <view class="btn-pay btn-cta btn-grey m-top-10 m-b-6" bindtap="payByself">找人代付</view>
+
+    </view>
+</scroll-view>

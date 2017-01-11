@@ -1,8 +1,8 @@
 <!--index.wxml-->
 <view class="container">
   <view class="card_wrap">
-    <view bindtouchend="slidethis" animation="{{id === 0 ? animationData : ''}}" class="card_item card{{ id + 1 }} " wx:for="{{ cardInfoList }}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
-      <span class="change_icon" bindtap="slidethis" wx:if="{{ id === 0 }}">
+    <view bindtouchend="slidethis" animation="{{ animationlist[id] }}" class="card_item card{{ id + 1 }} zindex{{ zindex[(2-id)] }} " wx:for="{{ cardInfoList }}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
+      <span class="change_icon" bindtap="slidethis">
         <image src="http://dev.wemart.cn/console/images/card/changeicon.png"></image>
       </span>
       <view class="card_info">

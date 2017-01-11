@@ -43,6 +43,16 @@ Page({
   },
   //PayButtonEvent
   btnPay: function(e) {
+    app.selectTime = {
+        dates1: this.data.dates1,
+        dates2: this.data.dates2,
+        dates3: this.data.dates3, 
+    };
+    wx.showModal({
+        title: '错误提示',
+        content: '请填写地址'
+    });
+    // return false;
     wx.navigateTo({
       url: '../confirm/confirm'
     });

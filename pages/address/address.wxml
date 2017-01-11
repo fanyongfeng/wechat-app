@@ -22,15 +22,15 @@
         <view style="display:flex; flex-direction:row" class="m-top-10">
             <view class="data-select-item">
                 <view class="box">1</view>
-                <view class="data-select"><picker picker mode="date" bindchange="bindDateChange1">{{dates1}}</picker></view>
+                <view class="data-select"><picker mode="date" bindchange="bindDateChange1">{{dates1}}</picker></view>
             </view>
             <view class="data-select-item">
                 <view class="box">2</view>
-                <view class="data-select"><picker picker mode="date" bindchange="bindDateChange2">{{dates2}}</picker></view>
+                <view class="data-select"><picker mode="date" bindchange="bindDateChange2">{{dates2}}</picker></view>
             </view>
             <view class="data-select-item">
                 <view class="box">3</view>
-                <view class="data-select"><picker picker mode="date" bindchange="bindDateChange3">{{dates3}}</picker></view>
+                <view class="data-select"><picker mode="date" bindchange="bindDateChange3">{{dates3}}</picker></view>
             </view>
         </view>
     </view>
@@ -47,7 +47,7 @@
         </view>
         <view class="address_input"><input placeholder="街道" disabled="{{addDisabled}}"/></view>
         <view class="checkbox-style address_text">
-            <checkbox value = "收件人填写地址"/>支付完成后由TA输入地址
+            <checkbox class="checkbox" value = "收件人填写地址"/>支付完成后由TA输入地址
         </view>
     </view>
 
@@ -67,10 +67,10 @@
         <view style="display:flex;">
             <view class="text-left block_title">匿名赠送</view>
             <view class="switch-style text-right" style="flex-grow: 1;">
-                <switch bindchange="switch2Change"/>
+                <switch class="switch" bindchange="switch2Change"/>
             </view>
         </view>
     </view>
     
-    <view class = "block-bg btn-pay" bindtap="btnPay">确认支付</view>
+    <view class = "block-bg btn-pay btn-cta" bindtap="btnPay">确认支付</view>
 </scroll-view>

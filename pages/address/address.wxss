@@ -1,8 +1,8 @@
-/**index.wxss**/
+/**address.wxss**/
 /**optional**/
 @import "../../common.wxss";
-.block-bg {
-  padding: 14px 10px;
+page {
+  background: #F2F2F6;
 }
 .buy_flower_detail {
   display: flex;
@@ -44,14 +44,12 @@
 .buy_flower_detail_tip {
   flex-grow: 1;margin-left: 13px;
 }
-.block-bg{
-    background-color: white;
-    padding: 15px;
-    margin-top: 10px;
-    box-shadow: 1px 1px 15px #ccc; 
-}
+
 .btn-pay {
-  font-size: 20px;
+  width: 100%;
+  height: 22px;
+  font-size: 16px;
+  line-height: 22px;
   padding: 10px;
   color: #fff;
   text-align: center;
@@ -73,12 +71,14 @@
 }
 .data-select {
   border-bottom: 1px solid #c0c2ce;
-  display: inline-block;
+  flex-grow: 1;
 }
 
 .data-select picker {
+  width: 100%;
+  height: 100%;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 19px;
   color: #c0c2ce;
   display: inline-block;
 }
@@ -86,7 +86,7 @@
 .data-select-item {
   width: 33.33%;
   padding-left: 10px;
-  display: inline-block;
+  display: flex;
 }
 
 .address_input {

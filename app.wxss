@@ -25,6 +25,10 @@ page {
   background-color: #00c9a9;
 }
 
+.btn-cta.btn-grey {
+  background: #c0c2ce;
+}
+
 .btn-sku {
   padding: 4.5px 17px; 
   border-radius: 1.5px;
@@ -51,4 +55,11 @@ page {
 
 .content1 {
   color: #333333;  
+}
+
+.block-bg{
+  background-color: white;
+  padding: 14px 10px;
+  margin-top: 10px;
+  box-shadow:  0px 2px 6px #E3E3E3; 
 }

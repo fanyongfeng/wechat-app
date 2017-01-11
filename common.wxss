@@ -7,11 +7,13 @@
 }
 
 .clearfix::after {
+  content: '';
   clear: both;
 }
 
 .clearfix::before {
   clear: both;
+  content: '';
 }
 
 .col-50 {
@@ -76,6 +78,11 @@
   margin-top: 10px;
 }
 
+.m-top-20 {
+  margin-top: 20px;
+}
+
+
 .m-b-6 {
   margin-bottom: 6px;
 }
@@ -90,4 +97,23 @@
 
 .m-b-17 {
   margin-bottom: 17px;
+}
+
+.zindex1 {
+  z-index: 1;
+}
+
+.zindex2 {
+  z-index: 2;
+}
+
+.zindex3 {
+  z-index: 3;
+}
+.checkbox {
+  height: 25px;
+}
+
+.switch {
+  height: 25px;
 }

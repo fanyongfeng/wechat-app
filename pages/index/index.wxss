@@ -31,6 +31,7 @@
   height: 94px;
   width: 80%;
   border: 1px #E3E3E3 solid;
+  border-top-width: 0;
 }
 .card_wrap .card_item .card_info .card_info_mes_title {
   font-size: 18px;
@@ -51,7 +52,7 @@
   /*top: 62px;
   left: 25px;*/
   transform: translateY(62px) translateX(25px);
-  z-index: 3
+  /*z-index: 3*/
 }
 .card_wrap .card_item.card1 .card_info {
   top: 270px;
@@ -61,7 +62,7 @@
 .card_wrap .card_item.card2 {
   /*top: 44px;
   left: 41px;*/
-  z-index: 2;
+  /*z-index: 2;*/
   transform: translateY(44px) translateX(41px);
 }
 .card_wrap .card_item.card2 .card_info {
@@ -74,7 +75,7 @@
   /*top: 28px;
   left: 51px;*/
   transform: translateY(28px) translateX(51px);
-  z-index: 1;
+  /*z-index: 1;*/
 }
 
 .card_wrap .card_item.card3 .card_info {
