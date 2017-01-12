@@ -55,7 +55,7 @@
     <view class = "block-bg">
         <view style="display:flex;">
             <view class="text-left block_title">随花附送心里话?</view>
-            <view class="switch-style text-right" style="flex-grow: 1;">
+            <view class="text-right" style="flex-grow: 1;">
                 <switch bindchange="switch1Change" style="height: 25px;"/>
             </view>
         </view>
@@ -66,7 +66,7 @@
     <view class = "block-bg">
         <view style="display:flex;">
             <view class="text-left block_title">匿名赠送</view>
-            <view class="switch-style text-right" style="flex-grow: 1;">
+            <view class="text-right" style="flex-grow: 1;">
                 <switch class="switch" bindchange="switch2Change"/>
             </view>
         </view>

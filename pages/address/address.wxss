@@ -66,9 +66,7 @@ page {
   line-height: 20px;
   display: inline-block;
 }
-.switch-style{
-    right:0
-}
+
 .data-select {
   border-bottom: 1px solid #c0c2ce;
   flex-grow: 1;
