@@ -3,7 +3,7 @@
   <view class="card_wrap">
     <view bindtouchend="slidethis" animation="{{ animationlist[id] }}" class="card_item card{{ id + 1 }} zindex{{ zindex[(2-id)] }} " wx:for="{{ cardInfoList }}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
       <span class="change_icon" bindtap="slidethis">
-        <image src="http://dev.wemart.cn/console/images/card/changeicon.png"></image>
+        <image src="/console/images/card/changeicon.png"></image>
       </span>
       <view class="card_info">
         <blockquote class="card_info_mes_title">{{ item.cardInfo.cardTitle }}</blockquote>
@@ -19,7 +19,7 @@
     </view>
     <!-- <view class="card_item card2">
       <span class="change_icon">
-        <image src="http://dev.wemart.cn/console/images/card/changeicon.png"></image>
+        <image src="/console/images/card/changeicon.png"></image>
       </span>
       <view class="card_info">
         <blockquote class="card_info_mes_title">你不知道的花事</blockquote>
@@ -29,11 +29,11 @@
         <span class="card_info_mes_item">一月两送，有趣节日送奇异花</span>
         <span class="card_info_mes_item">一月四送，有你在每天都是最好的节日</span>
       </view>
-      <image src="http://dev.wemart.cn/console/images/card/card2.png"></image>
+      <image src="/console/images/card/card2.png"></image>
     </view>
     <view class="card_item card3">
       <span class="change_icon">
-        <image src="http://dev.wemart.cn/console/images/card/changeicon.png"></image>
+        <image src="/console/images/card/changeicon.png"></image>
       </span>
       <view class="card_info">
         <blockquote class="card_info_mes_title">你不知道的花事</blockquote>
@@ -43,7 +43,7 @@
         <span class="card_info_mes_item">一月两送，有趣节日送奇异花</span>
         <span class="card_info_mes_item">一月四送，有你在每天都是最好的节日</span>
       </view>
-      <image src="http://dev.wemart.cn/console/images/card/card1.png"></image>
+      <image src="/console/images/card/card1.png"></image>
     </view> -->
   </view>
 </view>

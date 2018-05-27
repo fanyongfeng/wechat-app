@@ -59,7 +59,7 @@ page {
 
 .block-bg{
   background-color: white;
-  padding: 14px 10px;
+  padding: 10px 10px;
   margin-top: 10px;
   box-shadow:  0px 2px 6px #E3E3E3; 
 }

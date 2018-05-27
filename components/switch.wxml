@@ -1,0 +1,9 @@
+<!-- 由于微信自带的radiobutton 不能调节大小，所以自己造一个  -->
+<template name="switch">
+    <view 
+    id="{{id}}"
+    class="switch {{ class }} {{isOn ? 'toggle-on' : 'toggle-off'}}" 
+      style="background-color:{{isOn ? onTintColor || '#09bb07' : '#ddd'}}" 
+    bindtap="tapSwitch">
+  </view>
+</template>

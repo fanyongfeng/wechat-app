@@ -1,4 +1,5 @@
 <!--address.xml-->
+<import src="../../components/switch.wxml" />
 <scroll-view class="page">
 
     <!--购买花详情-->
@@ -34,20 +35,25 @@
             </view>
         </view>
     </view>
-
     <!--配送地址-->
     <view class = "block-bg">
         <view class="text-left block_title">配送地址</view>
-        <view class="address_input"><input placeholder="收货人" disabled="{{addDisabled}}"/></view>
-        <view class="address_input"><input placeholder="电话" type="number" disabled="{{addDisabled}}"/></view>
-        <view class="address_input" style="display:flex; flex-direction:row">
-            <input placeholder="省份" style="margin-right: 8px;" disabled="{{addDisabled}}"/>
-            <input placeholder="城市" style="margin-right: 8px;" disabled="{{addDisabled}}"/>
-            <input placeholder="区" disabled="{{addDisabled}}"/>
+        <view class="address_input"><input placeholder="收货人" bindblur="receiveCustomChange"/></view>
+        <view class="address_input"><input placeholder="电话" type="number" bindblur="mobileNoChange"/></view>
+        <view class="address_input address_wrap">
+            <picker mode="selector" class="wrap_item" bindchange="bindProvinceChange" value="{{index}}" range="{{provinceList}}">
+                <view>{{provinceList[provinceIndex || 0]}}</view>
+            </picker>
+            <picker class="wrap_item" bindchange="bindCityChange" value="{{index}}" range-key="name" range="{{cityList}}">
+                <view>{{cityList[cityIndex || 0].name}}</view>
+            </picker>
+            <picker class="wrap_item" bindchange="bindAreaChange" value="{{index}}" range="{{areaList}}">
+                 <view>{{areaList[areaIndex || 0]}}</view>
+            </picker>
         </view>
-        <view class="address_input"><input placeholder="街道" disabled="{{addDisabled}}"/></view>
+        <view class="address_input"><input placeholder="街道"/></view>
         <view class="checkbox-style address_text">
-            <checkbox class="checkbox" value = "收件人填写地址"/>支付完成后由TA输入地址
+            <checkbox size="25" class="checkbox" value=""/>支付完成后由TA输入地址
         </view>
     </view>
 
@@ -55,19 +61,19 @@
     <view class = "block-bg">
         <view style="display:flex;">
             <view class="text-left block_title">随花附送心里话?</view>
-            <view class="text-right" style="flex-grow: 1;">
-                <switch bindchange="switch1Change" style="height: 25px;"/>
+            <view style="flex-grow: 1;">
+                 <template is="switch" data="{{isOn: switchData[1].isOn, class:switchData[1].class, id:switchData[1].id, onTintColor:switchData[1].color}}"/>
             </view>
         </view>
-        <textarea bindblur="bindTextAreaBlur" class="address_textarea" disabled="{{greetingDisabled}}"/>
+        <textarea bindblur="bindTextAreaBlur" class="address_textarea"/>
     </view>
 
     <!--匿名赠送-->
     <view class = "block-bg">
         <view style="display:flex;">
             <view class="text-left block_title">匿名赠送</view>
-            <view class="text-right" style="flex-grow: 1;">
-                <switch class="switch" bindchange="switch2Change"/>
+            <view style="flex-grow: 1;">
+               <template is="switch" data="{{isOn: switchData[0].isOn, class:switchData[1].class, id:switchData[0].id, onTintColor:switchData[0].color}}"/>
             </view>
         </view>
     </view>
